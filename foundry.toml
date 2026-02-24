@@ -1,0 +1,22 @@
+[profile.default]
+src = "/home/dministrator/AlogeDesign/UMA/src"
+out = "out"
+libs = ["lib", "lib/forge-std"]
+solc = "0.8.16"
+optimizer = true
+optimizer_runs = 1000000
+evm_version = "paris"
+
+remappings = [
+  "@openzeppelin/=lib/openzeppelin-contracts/",
+  "@uniswap/v3-core/=lib/v3-core/",
+  "@uniswap/v3-periphery/=lib/v3-periphery/",
+  "@uniswap/v2-core/=lib/v2-core/",
+  "@uniswap/v2-periphery/=lib/v2-periphery/",
+  "@uniswap/lib/=lib/uniswap-lib/",
+  "@maticnetwork/fx-portal/=lib/fx-portal/",
+  "@eth-optimism/=lib/eth-optimism/",
+  "@gnosis.pm/zodiac/=lib/gnosis.pm/zodiac/",
+  "ds-test/=lib/forge-std/lib/ds-test/src/",
+  "forge-std/=lib/forge-std/src/"
+]
